@@ -19,7 +19,7 @@ deploy()
         host=$(echo $line | awk '{print $1}')
         ip=$(echo $line | awk '{print $2}')
         i=$((i+1))
-        echo "Copy riak #$i to host $host..."
+        echo "Deploy riak #$i to host $host..."
         rsync -az --delete $riak_dir $username@$host:$REMOTE_DIR
         ssh $username@$host "
             cd $REMOTE_DIR/riak;
@@ -61,7 +61,7 @@ shutdown()
     echo "Shutdown"
     while read line; do
        host=$(echo $line | awk '{print $1}')
-       printf 'Shutting down riak at %s...' $host 
+       printf 'Shut down riak at %s...' $host 
        ssh $username@$host "
            cd $REMOTE_DIR/riak;
            ./bin/riak stop;" < /dev/null
