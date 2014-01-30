@@ -1,3 +1,10 @@
-cn81.cloud.cs.illinois.edu 172.22.28.91
-cn82.cloud.cs.illinois.edu 172.22.28.92
-cn88.cloud.cs.illinois.edu 172.22.28.98
+node-00.riak.Confluence.emulab.net 155.98.39.82
+node-01.riak.Confluence.emulab.net 155.98.39.127
+node-02.riak.Confluence.emulab.net 155.98.39.72
+node-03.riak.Confluence.emulab.net 155.98.39.155
+node-04.riak.Confluence.emulab.net 155.98.39.95
+node-05.riak.Confluence.emulab.net 155.98.39.126
+node-06.riak.Confluence.emulab.net 155.98.39.79
+node-07.riak.Confluence.emulab.net 155.98.39.83
+node-08.riak.Confluence.emulab.net 155.98.39.106
+node-09.riak.Confluence.emulab.net 155.98.39.80
