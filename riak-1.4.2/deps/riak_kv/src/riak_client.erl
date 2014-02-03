@@ -104,8 +104,6 @@ get(Bucket, Key) ->
 %% @doc Fetch the object at Bucket/Key.  Return a value as soon as R-value for the nodes
 %%      have responded with a value or error.
 get(Bucket, Key, Options) when is_list(Options) ->
-    file:write_file("/Users/son/Projects/riak/riak/temp.txt", 
-        io_lib:fwrite("~p ~p ~p ~p.\n", [Bucket, Key, Options, extract_read_delay(Options)]), [append]),
     D = extract_read_delay(Options),
     if is_integer(D) -> 
         timer:sleep(D),
