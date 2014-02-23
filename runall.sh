@@ -1,5 +1,4 @@
 #!/bin/bash
-clear
 
 #cd /home/muntasir/hadoop_natjam_deadline/hadoop-common
 #git pull
