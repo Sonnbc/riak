@@ -50,16 +50,16 @@ deploy()
 }
 
 
-# changeshell()
-# {
-#     echo "Change shell"
-#     while read line; do
-#        host=$(echo $line | awk '{print $2}')
-#        printf 'Change shell to bash at %s...' $host
-#        printf "ssh $username@$host" 
-#        ssh -t $username@$host "chsh -s /bin/bash;" < /dev/null
-#     done < $HOSTS
-# }
+changeshell()
+{
+    echo "Change shell"
+    while read line; do
+       host=$(echo $line | awk '{print $2}')
+       printf 'Change shell to bash at %s...' $host
+       printf "ssh $username@$host" 
+       ssh -t $username@$host "chsh -s /bin/bash;" < /dev/null
+    done < $HOSTS
+}
 
 start()
 {
