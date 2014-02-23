@@ -24,7 +24,6 @@ CHANGE_SHELL="sudo chsh -s /bin/bash"
 
 for (( c = 0; c < $NUM_NODES; c++ ))
 do
-    ssh sonnbc@node-0$c $JAVA_COMMAND
     ssh sonnbc@node-0$c $CHANGE_SHELL
 done
 
