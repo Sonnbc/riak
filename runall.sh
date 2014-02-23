@@ -21,10 +21,15 @@ NUM_NODES=$1
 
 JAVA_COMMAND="sudo apt-get update; sudo apt-get install -y openjdk-7-jdk"
 CHANGE_SHELL="sudo chsh -s /bin/bash"
-
+START="/riak/riak/bin/riak start"
+JOIN="/riak/riak/bin/riak-admin cluster join riak@10.1.1.2"
 for (( c = 0; c < $NUM_NODES; c++ ))
 do
-    ssh sonnbc@node-0$c $CHANGE_SHELL
+    ssh sonnbc@node-0$c $START
 done
 
+for (( c = 1; c < $NUM_NODES; c++ ))
+do
+    ssh sonnbc@node-0$c $JOIN
+done
 
