@@ -1,10 +1,7 @@
-node-00.riak.Confluence.emulab.net 155.98.39.82
-node-01.riak.Confluence.emulab.net 155.98.39.127
-node-02.riak.Confluence.emulab.net 155.98.39.72
-node-03.riak.Confluence.emulab.net 155.98.39.155
-node-04.riak.Confluence.emulab.net 155.98.39.95
-node-05.riak.Confluence.emulab.net 155.98.39.126
-node-06.riak.Confluence.emulab.net 155.98.39.79
-node-07.riak.Confluence.emulab.net 155.98.39.83
-node-08.riak.Confluence.emulab.net 155.98.39.106
-node-09.riak.Confluence.emulab.net 155.98.39.80
+node-00 155.98.39.143
+node-01 155.98.39.156
+node-02 155.98.39.124
+node-03 155.98.39.139
+node-04 155.98.39.135
+node-05 155.98.39.68
+node-06 155.98.39.72
