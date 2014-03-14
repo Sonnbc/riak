@@ -20,9 +20,8 @@ deploy()
         prev_host=$host
         host=$(echo $line | awk '{print $1}')
         ip=$(echo $line | awk '{print $2}')
-        i=$((i+1))
         echo "Deploy riak #$i to host $host..."
-        ssh -t $username@$ip "
+        ssh -t node-0$i "
             sudo rm -rf $REMOTE_DIR;
             sudo mkdir $REMOTE_DIR;
             sudo chown -R $username: $REMOTE_DIR;
@@ -36,7 +35,7 @@ deploy()
             #if ! [ -z $prev_host ]; then
             #    ./bin/riak-admin cluster join riak@$prev_host 
             #fi" < /dev/null
-
+        i=$((i+1))    
     done < $HOSTS
 
     if [ -z $host ]; then
