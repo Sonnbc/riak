@@ -2,7 +2,7 @@ import socket, time
 import subprocess
 
 while True:
-    address = "node-00"
+    address = "node-01"
     res = subprocess.call(['ping', '-c', '3', address])
     if res == 0:
         print "ping to", address, "OK"
